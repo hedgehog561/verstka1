@@ -1,0 +1,83 @@
+.review {
+    margin: 126px 96px 96px 96px;
+
+    .review_name {
+        width: 457px;
+        height: 96px;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        @extend %text-high;
+    }
+
+    h3 {
+        @extend %plants-text;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    p {
+        @extend %plants-text;
+    }
+
+    h4 {
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        color: rgba(30, 30, 30, 0.5);
+        margin: 0;
+    }
+
+    .review-body {
+        display: flex;
+        gap: 30px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        
+
+        .review-body_text {
+            width: 800px;
+            height: 330px;
+            border-radius: 12px;
+            background-color: #C1DCDC;
+            padding: 48px 48px 0 48px;
+
+            p {
+                width: 704px;
+                height: 81px;
+                white-space: wrap;
+            }
+
+            .review-body_text_number {
+                width: 704px;
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .review-body_text_number_men {
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    img {
+                        width: 150px;
+                        height: 205.99px;
+                    }
+                }
+                .review-body_text_number_size {
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 5px;
+                    img {
+                        width: 20px;
+                        height: 18.75px;
+                    }
+                }
+            }
+        }
+    }
+
+}

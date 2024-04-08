@@ -1,0 +1,67 @@
+.footer {
+    width: 1440px;
+    height: 400px;
+    background-color: #C1DCDC;
+
+    h2 {
+        @extend %plants-text;
+        color: rgba(30, 30, 30, 0.5);
+    }
+
+    .footer-body {
+        
+        .footer-body_high {
+            margin: 48px 96px 48px 96px;
+            width: 1248px;
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .footer-body_text {
+            width: 192px;
+            height: 179px;
+        }
+
+        .footer-body_link {
+            margin: 0 96px;
+        }
+    }
+
+
+    .footer-body_list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+
+        ul li {
+            list-style: none;
+            padding: 10px 0 10px 0;
+            color: rgba(30, 30, 30, 0.5);
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+        }
+
+        ul li:first-of-type {
+            color: black;
+            padding-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .footer {
+        width: auto;
+        .footer-body {
+            width: auto;
+
+            .footer-body_high {
+                width: auto;
+                gap: 120px;
+            }
+        }
+    }
+}

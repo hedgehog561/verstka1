@@ -1,0 +1,50 @@
+.about {
+    margin: 30px 96px 126px 96px;
+    text-align: center;
+    width: 1248px;
+
+    h2 {
+        @extend %text-high;
+    }
+
+    h3 {
+        @extend %plants-text;
+        font-weight: 700;
+    }
+
+    p {
+        @extend %plants-text;
+        color: rgba(30, 30, 30, 0.5);
+    }
+
+    .about_text {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+
+        div {
+            width: 400px;
+            height: 213px;
+        
+        }
+
+        img {
+            width: 96px;
+            height: 96px;
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .about {
+        width: 800px;
+
+        .about_text {
+            justify-content: left;
+            flex-direction: column;
+            gap: 25px;
+        }
+    }  
+}

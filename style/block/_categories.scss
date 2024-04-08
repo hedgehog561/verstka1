@@ -1,0 +1,85 @@
+.categories {   
+    text-align: center;
+
+    h2 {
+        @extend %text-high;
+    }
+
+    h3 {
+        @extend %plants-text;
+        font-weight: 700;
+    }
+
+    p {
+        @extend %plants-text;
+        color: rgba(30, 30, 30, 0.5);
+    }
+
+    .categories-text {
+        margin: 30px 96px 0 96px;
+        width: 1248px;
+    }
+
+    .categories-body {
+        background-color: #C1DCDC;
+        width: 1440px;
+        height: 915px;
+    }
+
+    .categories-foto {
+        margin: 30px 96px 0 96px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 1248px;
+        height: 841px;
+        top: 183px;
+        gap: 60px;
+        
+        p {
+            width: 352px;
+            height: 54px;
+        }
+
+        .categories-foto_2 {
+            padding: 140px 0 0 0;
+
+            button {
+                border: none;
+                cursor: pointer;
+                appearance: none;
+                width: 168px;
+                height: 51px;
+                padding: 12px 24px;
+                gap: 10px;
+                border-radius: 8px;
+                background-color: white;
+                @extend %plants-text;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) {
+
+    .categories {
+        .categories-body {
+            width: auto;
+        }
+
+        .categories-foto {
+            margin: 0;
+            width: auto;
+            gap: 5px;
+
+            img {
+                width: 75%;
+            }
+        }
+
+        .categories-text {
+            margin: 0;
+            width: auto;
+        }
+    }
+}
